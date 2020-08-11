@@ -53,7 +53,7 @@ int main() {
 		}
 
 	});
-
+	t2.join();
 	t1.join();
 	//cout << "potokmain " << this_thread::get_id() << endl;
 }
