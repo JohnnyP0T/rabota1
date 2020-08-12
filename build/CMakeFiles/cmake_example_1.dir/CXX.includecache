@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/johnny/dev/prog1/Client.cpp
-Client.h
-/home/johnny/dev/prog1/Client.h
-
 /home/johnny/dev/prog1/Client.h
 sys/types.h
 -
@@ -32,10 +28,6 @@ iostream
 fstream
 -
 
-/home/johnny/dev/prog1/Flow1.cpp
-Flow1.h
-/home/johnny/dev/prog1/Flow1.h
-
 /home/johnny/dev/prog1/Flow1.h
 string.h
 -
@@ -43,10 +35,6 @@ iostream
 -
 fstream
 -
-
-/home/johnny/dev/prog1/Flow2.cpp
-Flow2.h
-/home/johnny/dev/prog1/Flow2.h
 
 /home/johnny/dev/prog1/Flow2.h
 string.h
@@ -60,6 +48,8 @@ fstream
 thread
 -
 chrono
+-
+condition_variable
 -
 iostream
 -

@@ -50,4 +50,4 @@ void Flow1::FilingBuf(string& str)
 	ofstream file("buffer.txt");
 	file << str;
 	file.close();
-}
+} 

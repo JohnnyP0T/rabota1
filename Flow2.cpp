@@ -29,10 +29,11 @@ int Flow2::SumStr(string& str)
 	int count = 0;
 	int cx;
 	for (char num : str) {
-		if ((int)num > 48 && (int)num < 57){
+		if ((int)num >= 48 && (int)num <= 57){
 		cx = num - '0';
 			count += cx;
 		}
 	}
 	return count;
 }
+

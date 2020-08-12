@@ -1,6 +1,7 @@
 ﻿// Подключение библиотек
 #include <thread>
 #include <chrono>
+#include <condition_variable>
 #include <iostream>
 #include <string>
 #include <mutex>
@@ -9,6 +10,7 @@
 #include "Client.h"
 using namespace std;
 mutex mtx;
+condition_variable cv;
 int main() {
 	// Создание локальных переменных
 	Flow1 flow1;
@@ -28,17 +30,19 @@ int main() {
 			continue;
 		}
 		flow1.SortingStr(str);
-		mtx.lock();
  		flow1.FilingBuf(str);
-		mtx.unlock();
+		cv.notify_one();
 		}
 	});
 	
 	// Запуск воторго потока
 	thread t2([&](){ 
 		for(;;){
+		unique_lock<mutex> ulm (mtx);
+		cv.wait(ulm);			
  		str2 = flow2.GetStr();
 		flow2.CleanBuf();
+		ulm.unlock();	
 		if (str2 == "")
 		 	continue;
 		flow2.OutputStr(str2);

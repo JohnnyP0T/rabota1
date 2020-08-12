@@ -30,9 +30,9 @@ int Client::StartServer(char msg[128])
         exit(1);
     }
 
-    // Прием от сервера сигнала об успешной работе
+    // Прием от сервера сигнала об успешной работе 
     while((n = read(sock, buffer, LBUF)) > 0){
-        printf(buffer);
+        //printf(buffer);
         memset(buffer, 0, LBUF);
     }
     
