@@ -1,7 +1,7 @@
 #include "Client.h"
 
 //int Client::StartServer(string& str)
-int Client::StartServer(char *msg)
+int Client::StartServer(char msg[128])
 {
     char buffer[LBUF];
     //char *msg;
@@ -33,9 +33,10 @@ int Client::StartServer(char *msg)
         memset(buffer, 0, LBUF);
     }
     
-    if(buffer == "1")
+    if(buffer == "1"){
+        close(sock);
         return 1;
-
+    }
     if (n < 0){
         printf("CLIENT: unable to recieve.\n");
         exit(1);

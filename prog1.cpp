@@ -18,6 +18,7 @@ int main() {
 	
 	Flow1 flow1;
 	string str;
+	char msg[128];
 	Flow2 flow2;
 	string str2;
 	int sum;
@@ -58,7 +59,8 @@ int main() {
 		flow2.OutputStr(str2);
 		sum = flow2.SumStr(str2);
 		this_thread::sleep_for(chrono::milliseconds(1000));
-		client.StartServer(sum);
+		sprintf(msg, "%d", sum);
+		client.StartServer(msg);
 		}
 //cout << "potok2 " << this_thread::get_id() << endl;
 	});

@@ -22,10 +22,12 @@ void Flow2::OutputStr(string& str)
 int Flow2::SumStr(string& str)
 {
 	int count = 0;
+	int cx;
 	for (char num : str) {
 		if ((int)num > 48 && (int)num < 57){
 		//cout << "num = "<< num << endl;
-			count++;
+		cx = num - '0';
+			count += cx;
 		}
 	}
 	//cout << count << endl;
