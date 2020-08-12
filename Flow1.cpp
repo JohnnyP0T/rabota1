@@ -1,26 +1,28 @@
 #include "Flow1.h"
-//using namespace std;
-void Flow1::InputStr(string &str)
+
+void Flow1::InputStr(string &str) // Сделал отделный метод для дальнейшей модорнизации
 {
-	//string str;
 	cin >> str;
 }
 
+// Проверка строки
 int Flow1::CheckStr(string &str) // 0 good. 1 not good
 {
 	int count = 0;
 	
 	for (char num : str) {
-		//cout << num << endl;
 		count++;
 		if ((int)num < 48 || (int)num > 57)
 			return 1;
 	}
+
 	if (count > 64)
 		return 1;
+
 	return 0;
 }
 
+// Сортировка строки
 void Flow1::SortingStr(string& str)
 {
 	string st = "KB";
@@ -42,6 +44,7 @@ void Flow1::SortingStr(string& str)
 	}
 }
 
+// Заполнение буфера
 void Flow1::FilingBuf(string& str)
 {
 	ofstream file("buffer.txt");

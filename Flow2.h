@@ -5,10 +5,7 @@
 using namespace std;
 class Flow2
 {
-	private:
-	//string str;
 	public:
-	// potok 2
 	string GetStr();
 	void CleanBuf();
 	void OutputStr(string& str);

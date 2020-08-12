@@ -12,11 +12,9 @@
 using namespace std;
 #define LEN sizeof(struct sockaddr_in)
 #define LBUF 128
-//char buffer[LBUF];
-//char *msg = "Potlog eto my client";
+
 class Client
 {
     public:
-    //int StartServer(string& str);
     int StartServer(char *msg);
 };
