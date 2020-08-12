@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/johnny/prog1/Client.cpp" "/home/johnny/prog1/build/CMakeFiles/cmake_example_1.dir/Client.cpp.o"
-  "/home/johnny/prog1/Flow1.cpp" "/home/johnny/prog1/build/CMakeFiles/cmake_example_1.dir/Flow1.cpp.o"
-  "/home/johnny/prog1/Flow2.cpp" "/home/johnny/prog1/build/CMakeFiles/cmake_example_1.dir/Flow2.cpp.o"
-  "/home/johnny/prog1/prog1.cpp" "/home/johnny/prog1/build/CMakeFiles/cmake_example_1.dir/prog1.cpp.o"
+  "/home/johnny/dev/prog1/Client.cpp" "/home/johnny/dev/prog1/build/CMakeFiles/cmake_example_1.dir/Client.cpp.o"
+  "/home/johnny/dev/prog1/Flow1.cpp" "/home/johnny/dev/prog1/build/CMakeFiles/cmake_example_1.dir/Flow1.cpp.o"
+  "/home/johnny/dev/prog1/Flow2.cpp" "/home/johnny/dev/prog1/build/CMakeFiles/cmake_example_1.dir/Flow2.cpp.o"
+  "/home/johnny/dev/prog1/prog1.cpp" "/home/johnny/dev/prog1/build/CMakeFiles/cmake_example_1.dir/prog1.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

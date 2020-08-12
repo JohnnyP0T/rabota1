@@ -16,15 +16,18 @@ void Flow2::CleanBuf()
 
 void Flow2::OutputStr(string& str)
 {
-	cout << str;
+	cout << str << endl;
 }
 
 int Flow2::SumStr(string& str)
 {
 	int count = 0;
 	for (char num : str) {
-		if ((int)num < 48 || (int)num > 57)
+		if ((int)num > 48 && (int)num < 57){
+		//cout << "num = "<< num << endl;
 			count++;
+		}
 	}
+	//cout << count << endl;
 	return count;
 }

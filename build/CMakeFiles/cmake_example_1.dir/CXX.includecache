@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/johnny/prog1/Client.cpp
-Client.h
-/home/johnny/prog1/Client.h
-
-/home/johnny/prog1/Client.h
+/home/johnny/dev/prog1/Client.h
 sys/types.h
 -
 sys/socket.h
@@ -32,7 +28,7 @@ iostream
 fstream
 -
 
-/home/johnny/prog1/Flow1.h
+/home/johnny/dev/prog1/Flow1.h
 string.h
 -
 iostream
@@ -40,7 +36,7 @@ iostream
 fstream
 -
 
-/home/johnny/prog1/Flow2.h
+/home/johnny/dev/prog1/Flow2.h
 string.h
 -
 iostream
@@ -48,7 +44,7 @@ iostream
 fstream
 -
 
-/home/johnny/prog1/prog1.cpp
+/home/johnny/dev/prog1/prog1.cpp
 thread
 -
 chrono
@@ -60,9 +56,9 @@ string
 mutex
 -
 Flow1.h
-/home/johnny/prog1/Flow1.h
+/home/johnny/dev/prog1/Flow1.h
 Flow2.h
-/home/johnny/prog1/Flow2.h
+/home/johnny/dev/prog1/Flow2.h
 Client.h
-/home/johnny/prog1/Client.h
+/home/johnny/dev/prog1/Client.h
 
