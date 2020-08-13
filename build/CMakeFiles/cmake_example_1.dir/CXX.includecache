@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/johnny/dev/prog1/Buf.cpp
+Buf.h
+/home/johnny/dev/prog1/Buf.h
+
+/home/johnny/dev/prog1/Buf.h
+string.h
+-
+iostream
+-
+fstream
+-
+
+/home/johnny/dev/prog1/Client.cpp
+Client.h
+/home/johnny/dev/prog1/Client.h
+
 /home/johnny/dev/prog1/Client.h
 sys/types.h
 -
@@ -28,15 +44,11 @@ iostream
 fstream
 -
 
-/home/johnny/dev/prog1/Flow1.h
-string.h
--
-iostream
--
-fstream
--
+/home/johnny/dev/prog1/StrCls.cpp
+StrCls.h
+/home/johnny/dev/prog1/StrCls.h
 
-/home/johnny/dev/prog1/Flow2.h
+/home/johnny/dev/prog1/StrCls.h
 string.h
 -
 iostream
@@ -57,10 +69,10 @@ string
 -
 mutex
 -
-Flow1.h
-/home/johnny/dev/prog1/Flow1.h
-Flow2.h
-/home/johnny/dev/prog1/Flow2.h
+StrCls.h
+/home/johnny/dev/prog1/StrCls.h
+Buf.h
+/home/johnny/dev/prog1/Buf.h
 Client.h
 /home/johnny/dev/prog1/Client.h
 

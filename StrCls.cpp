@@ -1,12 +1,12 @@
-#include "Flow1.h"
+ #include "StrCls.h"
 
-void Flow1::InputStr(string &str) // Сделал отделный метод для дальнейшей модорнизации
+void StrCls::InputS(string &str) // Сделал отделный метод для дальнейшей модорнизации
 {
 	cin >> str;
 }
 
 // Проверка строки
-int Flow1::CheckStr(string &str) // 0 good. 1 not good
+int StrCls::CheckS(string &str) // 0 good. 1 not good
 {
 	int count = 0;
 	
@@ -23,7 +23,7 @@ int Flow1::CheckStr(string &str) // 0 good. 1 not good
 }
 
 // Сортировка строки
-void Flow1::SortingStr(string& str)
+void StrCls::SortS(string& str)
 {
 	string st = "KB";
 	int ch;
@@ -44,10 +44,22 @@ void Flow1::SortingStr(string& str)
 	}
 }
 
-// Заполнение буфера
-void Flow1::FilingBuf(string& str)
+// Вывод строки
+void StrCls::OutputS(string& str)
 {
-	ofstream file("buffer.txt");
-	file << str;
-	file.close();
-} 
+	cout << str << endl;
+}
+
+// Сумма численных элементов
+int StrCls::SumS(string& str)
+{
+	int count = 0;
+	int cx;
+	for (char num : str) {
+		if ((int)num >= 48 && (int)num <= 57){
+		cx = num - '0';
+			count += cx;
+		}
+	}
+	return count;
+}

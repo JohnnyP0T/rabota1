@@ -5,18 +5,18 @@
 #include <iostream>
 #include <string>
 #include <mutex>
-#include "Flow1.h"
-#include "Flow2.h"
+#include "StrCls.h"
+#include "Buf.h"
 #include "Client.h"
 using namespace std;
 mutex mtx;
 condition_variable cv;
 int main() {
 	// Создание локальных переменных
-	Flow1 flow1;
+	Buf buf; 
 	string str;
 	char msg[128];
-	Flow2 flow2;
+	StrCls clsString; 
 	string str2;
 	int sum;
 	Client client;
@@ -24,13 +24,13 @@ int main() {
 	// Запуск первого потока
 	thread t1([&](){ 
 		for(;;){
-		flow1.InputStr(str);
-		if(flow1.CheckStr(str) != 0){
+		clsString.InputS(str);
+		if(clsString.CheckS(str) != 0){
 			cout << "строка содержит символы или больше 64 символов" << endl;
 			continue;
 		}
-		flow1.SortingStr(str);
- 		flow1.FilingBuf(str);
+		clsString.SortS(str);
+ 		buf.FilB(str); 
 		cv.notify_one();
 		}
 	});
@@ -40,15 +40,15 @@ int main() {
 		for(;;){
 		unique_lock<mutex> ulm (mtx);
 		cv.wait(ulm);			
- 		str2 = flow2.GetStr();
-		flow2.CleanBuf();
+ 		str2 = buf.GetB(); 
+		buf.CleanB(); 
 		ulm.unlock();	
 		if (str2 == "")
 		 	continue;
-		flow2.OutputStr(str2);
-		sum = flow2.SumStr(str2);
+		clsString.OutputS(str2);
+		sum = clsString.SumS(str2);
 		sprintf(msg, "%d", sum);
-		client.StartServer(msg);
+		client.StartClient(msg);
 		}
 	});
 	

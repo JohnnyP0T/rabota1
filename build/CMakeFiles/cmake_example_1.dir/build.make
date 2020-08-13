@@ -76,9 +76,22 @@ include CMakeFiles/cmake_example_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cmake_example_1.dir/flags.make
 
+CMakeFiles/cmake_example_1.dir/Buf.cpp.o: CMakeFiles/cmake_example_1.dir/flags.make
+CMakeFiles/cmake_example_1.dir/Buf.cpp.o: ../Buf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johnny/dev/prog1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cmake_example_1.dir/Buf.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cmake_example_1.dir/Buf.cpp.o -c /home/johnny/dev/prog1/Buf.cpp
+
+CMakeFiles/cmake_example_1.dir/Buf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example_1.dir/Buf.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johnny/dev/prog1/Buf.cpp > CMakeFiles/cmake_example_1.dir/Buf.cpp.i
+
+CMakeFiles/cmake_example_1.dir/Buf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example_1.dir/Buf.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnny/dev/prog1/Buf.cpp -o CMakeFiles/cmake_example_1.dir/Buf.cpp.s
+
 CMakeFiles/cmake_example_1.dir/Client.cpp.o: CMakeFiles/cmake_example_1.dir/flags.make
 CMakeFiles/cmake_example_1.dir/Client.cpp.o: ../Client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johnny/dev/prog1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cmake_example_1.dir/Client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johnny/dev/prog1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cmake_example_1.dir/Client.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cmake_example_1.dir/Client.cpp.o -c /home/johnny/dev/prog1/Client.cpp
 
 CMakeFiles/cmake_example_1.dir/Client.cpp.i: cmake_force
@@ -89,31 +102,18 @@ CMakeFiles/cmake_example_1.dir/Client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example_1.dir/Client.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnny/dev/prog1/Client.cpp -o CMakeFiles/cmake_example_1.dir/Client.cpp.s
 
-CMakeFiles/cmake_example_1.dir/Flow1.cpp.o: CMakeFiles/cmake_example_1.dir/flags.make
-CMakeFiles/cmake_example_1.dir/Flow1.cpp.o: ../Flow1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johnny/dev/prog1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cmake_example_1.dir/Flow1.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cmake_example_1.dir/Flow1.cpp.o -c /home/johnny/dev/prog1/Flow1.cpp
+CMakeFiles/cmake_example_1.dir/StrCls.cpp.o: CMakeFiles/cmake_example_1.dir/flags.make
+CMakeFiles/cmake_example_1.dir/StrCls.cpp.o: ../StrCls.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johnny/dev/prog1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cmake_example_1.dir/StrCls.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cmake_example_1.dir/StrCls.cpp.o -c /home/johnny/dev/prog1/StrCls.cpp
 
-CMakeFiles/cmake_example_1.dir/Flow1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example_1.dir/Flow1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johnny/dev/prog1/Flow1.cpp > CMakeFiles/cmake_example_1.dir/Flow1.cpp.i
+CMakeFiles/cmake_example_1.dir/StrCls.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example_1.dir/StrCls.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johnny/dev/prog1/StrCls.cpp > CMakeFiles/cmake_example_1.dir/StrCls.cpp.i
 
-CMakeFiles/cmake_example_1.dir/Flow1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example_1.dir/Flow1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnny/dev/prog1/Flow1.cpp -o CMakeFiles/cmake_example_1.dir/Flow1.cpp.s
-
-CMakeFiles/cmake_example_1.dir/Flow2.cpp.o: CMakeFiles/cmake_example_1.dir/flags.make
-CMakeFiles/cmake_example_1.dir/Flow2.cpp.o: ../Flow2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/johnny/dev/prog1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cmake_example_1.dir/Flow2.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cmake_example_1.dir/Flow2.cpp.o -c /home/johnny/dev/prog1/Flow2.cpp
-
-CMakeFiles/cmake_example_1.dir/Flow2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cmake_example_1.dir/Flow2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johnny/dev/prog1/Flow2.cpp > CMakeFiles/cmake_example_1.dir/Flow2.cpp.i
-
-CMakeFiles/cmake_example_1.dir/Flow2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example_1.dir/Flow2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnny/dev/prog1/Flow2.cpp -o CMakeFiles/cmake_example_1.dir/Flow2.cpp.s
+CMakeFiles/cmake_example_1.dir/StrCls.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cmake_example_1.dir/StrCls.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnny/dev/prog1/StrCls.cpp -o CMakeFiles/cmake_example_1.dir/StrCls.cpp.s
 
 CMakeFiles/cmake_example_1.dir/prog1.cpp.o: CMakeFiles/cmake_example_1.dir/flags.make
 CMakeFiles/cmake_example_1.dir/prog1.cpp.o: ../prog1.cpp
@@ -130,17 +130,17 @@ CMakeFiles/cmake_example_1.dir/prog1.cpp.s: cmake_force
 
 # Object files for target cmake_example_1
 cmake_example_1_OBJECTS = \
+"CMakeFiles/cmake_example_1.dir/Buf.cpp.o" \
 "CMakeFiles/cmake_example_1.dir/Client.cpp.o" \
-"CMakeFiles/cmake_example_1.dir/Flow1.cpp.o" \
-"CMakeFiles/cmake_example_1.dir/Flow2.cpp.o" \
+"CMakeFiles/cmake_example_1.dir/StrCls.cpp.o" \
 "CMakeFiles/cmake_example_1.dir/prog1.cpp.o"
 
 # External object files for target cmake_example_1
 cmake_example_1_EXTERNAL_OBJECTS =
 
+cmake_example_1: CMakeFiles/cmake_example_1.dir/Buf.cpp.o
 cmake_example_1: CMakeFiles/cmake_example_1.dir/Client.cpp.o
-cmake_example_1: CMakeFiles/cmake_example_1.dir/Flow1.cpp.o
-cmake_example_1: CMakeFiles/cmake_example_1.dir/Flow2.cpp.o
+cmake_example_1: CMakeFiles/cmake_example_1.dir/StrCls.cpp.o
 cmake_example_1: CMakeFiles/cmake_example_1.dir/prog1.cpp.o
 cmake_example_1: CMakeFiles/cmake_example_1.dir/build.make
 cmake_example_1: CMakeFiles/cmake_example_1.dir/link.txt

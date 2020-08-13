@@ -16,5 +16,5 @@ using namespace std;
 class Client
 {
     public:
-    int StartServer(char *msg);
+    int StartClient(char *msg);
 };

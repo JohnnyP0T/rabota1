@@ -1,11 +1,11 @@
 #include "Client.h"
 
-int Client::StartServer(char msg[128])
+int Client::StartClient(char msg[128])
 {
     // Объявление локалных переменных и структур данных
     char buffer[LBUF];
-    struct sockaddr_in client, server;
-    int n, sock, s_len, c_len;
+    struct sockaddr_in server;
+    int n, sock;
 
     // Создание сокета клиента
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0){
@@ -32,15 +32,10 @@ int Client::StartServer(char msg[128])
 
     // Прием от сервера сигнала об успешной работе 
     while((n = read(sock, buffer, LBUF)) > 0){
-        //printf(buffer);
+        //printf(buffer); нужно для проверки
         memset(buffer, 0, LBUF);
     }
     
-    if(buffer == "1"){
-        close(sock);
-        return 1;
-    }
-
     if (n < 0){
         printf("CLIENT: unable to recieve.\n");
         exit(1);

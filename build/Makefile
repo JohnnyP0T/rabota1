@@ -142,6 +142,33 @@ cmake_example_1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/build
 .PHONY : cmake_example_1/fast
 
+Buf.o: Buf.cpp.o
+
+.PHONY : Buf.o
+
+# target to build an object file
+Buf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Buf.cpp.o
+.PHONY : Buf.cpp.o
+
+Buf.i: Buf.cpp.i
+
+.PHONY : Buf.i
+
+# target to preprocess a source file
+Buf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Buf.cpp.i
+.PHONY : Buf.cpp.i
+
+Buf.s: Buf.cpp.s
+
+.PHONY : Buf.s
+
+# target to generate assembly for a file
+Buf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Buf.cpp.s
+.PHONY : Buf.cpp.s
+
 Client.o: Client.cpp.o
 
 .PHONY : Client.o
@@ -169,59 +196,32 @@ Client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Client.cpp.s
 .PHONY : Client.cpp.s
 
-Flow1.o: Flow1.cpp.o
+StrCls.o: StrCls.cpp.o
 
-.PHONY : Flow1.o
-
-# target to build an object file
-Flow1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Flow1.cpp.o
-.PHONY : Flow1.cpp.o
-
-Flow1.i: Flow1.cpp.i
-
-.PHONY : Flow1.i
-
-# target to preprocess a source file
-Flow1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Flow1.cpp.i
-.PHONY : Flow1.cpp.i
-
-Flow1.s: Flow1.cpp.s
-
-.PHONY : Flow1.s
-
-# target to generate assembly for a file
-Flow1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Flow1.cpp.s
-.PHONY : Flow1.cpp.s
-
-Flow2.o: Flow2.cpp.o
-
-.PHONY : Flow2.o
+.PHONY : StrCls.o
 
 # target to build an object file
-Flow2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Flow2.cpp.o
-.PHONY : Flow2.cpp.o
+StrCls.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/StrCls.cpp.o
+.PHONY : StrCls.cpp.o
 
-Flow2.i: Flow2.cpp.i
+StrCls.i: StrCls.cpp.i
 
-.PHONY : Flow2.i
+.PHONY : StrCls.i
 
 # target to preprocess a source file
-Flow2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Flow2.cpp.i
-.PHONY : Flow2.cpp.i
+StrCls.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/StrCls.cpp.i
+.PHONY : StrCls.cpp.i
 
-Flow2.s: Flow2.cpp.s
+StrCls.s: StrCls.cpp.s
 
-.PHONY : Flow2.s
+.PHONY : StrCls.s
 
 # target to generate assembly for a file
-Flow2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Flow2.cpp.s
-.PHONY : Flow2.cpp.s
+StrCls.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/StrCls.cpp.s
+.PHONY : StrCls.cpp.s
 
 prog1.o: prog1.cpp.o
 
@@ -259,15 +259,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cmake_example_1"
+	@echo "... Buf.o"
+	@echo "... Buf.i"
+	@echo "... Buf.s"
 	@echo "... Client.o"
 	@echo "... Client.i"
 	@echo "... Client.s"
-	@echo "... Flow1.o"
-	@echo "... Flow1.i"
-	@echo "... Flow1.s"
-	@echo "... Flow2.o"
-	@echo "... Flow2.i"
-	@echo "... Flow2.s"
+	@echo "... StrCls.o"
+	@echo "... StrCls.i"
+	@echo "... StrCls.s"
 	@echo "... prog1.o"
 	@echo "... prog1.i"
 	@echo "... prog1.s"
