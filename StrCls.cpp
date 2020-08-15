@@ -2,7 +2,7 @@
 
 void StrCls::InputS(string &str) // Сделал отделный метод для дальнейшей модорнизации
 {
-	cin >> str;
+	getline(cin, str);
 }
 
 // Проверка строки
@@ -27,8 +27,8 @@ void StrCls::SortS(string& str)
 {
 	string st = "KB";
 	int ch;
-	for (int j = 1; j < str.length(); j++) {
-		for (int i = 1; i < str.length(); i++) {
+	for (long unsigned int j = 1; j < str.length(); j++) {
+		for (long unsigned int i = 1; i < str.length(); i++) {
 			if (str[i] > str[i - 1]) {
 				ch = str[i - 1];
 				str[i - 1] = str[i];
@@ -36,7 +36,7 @@ void StrCls::SortS(string& str)
 			}
 		}
 	}
-	for (int i = 0; i < str.length(); i++) {
+	for (long unsigned int i = 0; i < str.length(); i++) {
 		if ((int)str[i] % 2 == 0) {
 			str.replace(i, 1, st);
 			i++;

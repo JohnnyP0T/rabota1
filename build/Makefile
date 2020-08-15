@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cmake_example_1
+# Target rules for targets named program1
 
 # Build rule for target.
-cmake_example_1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake_example_1
-.PHONY : cmake_example_1
+program1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 program1
+.PHONY : program1
 
 # fast build rule for target.
-cmake_example_1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/build
-.PHONY : cmake_example_1/fast
+program1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/build
+.PHONY : program1/fast
 
 Buf.o: Buf.cpp.o
 
@@ -148,7 +148,7 @@ Buf.o: Buf.cpp.o
 
 # target to build an object file
 Buf.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Buf.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/Buf.cpp.o
 .PHONY : Buf.cpp.o
 
 Buf.i: Buf.cpp.i
@@ -157,7 +157,7 @@ Buf.i: Buf.cpp.i
 
 # target to preprocess a source file
 Buf.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Buf.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/Buf.cpp.i
 .PHONY : Buf.cpp.i
 
 Buf.s: Buf.cpp.s
@@ -166,7 +166,7 @@ Buf.s: Buf.cpp.s
 
 # target to generate assembly for a file
 Buf.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Buf.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/Buf.cpp.s
 .PHONY : Buf.cpp.s
 
 Client.o: Client.cpp.o
@@ -175,7 +175,7 @@ Client.o: Client.cpp.o
 
 # target to build an object file
 Client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Client.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/Client.cpp.o
 .PHONY : Client.cpp.o
 
 Client.i: Client.cpp.i
@@ -184,7 +184,7 @@ Client.i: Client.cpp.i
 
 # target to preprocess a source file
 Client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/Client.cpp.i
 .PHONY : Client.cpp.i
 
 Client.s: Client.cpp.s
@@ -193,7 +193,7 @@ Client.s: Client.cpp.s
 
 # target to generate assembly for a file
 Client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/Client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/Client.cpp.s
 .PHONY : Client.cpp.s
 
 StrCls.o: StrCls.cpp.o
@@ -202,7 +202,7 @@ StrCls.o: StrCls.cpp.o
 
 # target to build an object file
 StrCls.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/StrCls.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/StrCls.cpp.o
 .PHONY : StrCls.cpp.o
 
 StrCls.i: StrCls.cpp.i
@@ -211,7 +211,7 @@ StrCls.i: StrCls.cpp.i
 
 # target to preprocess a source file
 StrCls.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/StrCls.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/StrCls.cpp.i
 .PHONY : StrCls.cpp.i
 
 StrCls.s: StrCls.cpp.s
@@ -220,7 +220,7 @@ StrCls.s: StrCls.cpp.s
 
 # target to generate assembly for a file
 StrCls.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/StrCls.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/StrCls.cpp.s
 .PHONY : StrCls.cpp.s
 
 prog1.o: prog1.cpp.o
@@ -229,7 +229,7 @@ prog1.o: prog1.cpp.o
 
 # target to build an object file
 prog1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/prog1.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/prog1.cpp.o
 .PHONY : prog1.cpp.o
 
 prog1.i: prog1.cpp.i
@@ -238,7 +238,7 @@ prog1.i: prog1.cpp.i
 
 # target to preprocess a source file
 prog1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/prog1.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/prog1.cpp.i
 .PHONY : prog1.cpp.i
 
 prog1.s: prog1.cpp.s
@@ -247,7 +247,7 @@ prog1.s: prog1.cpp.s
 
 # target to generate assembly for a file
 prog1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/prog1.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/program1.dir/build.make CMakeFiles/program1.dir/prog1.cpp.s
 .PHONY : prog1.cpp.s
 
 # Help Target
@@ -258,7 +258,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cmake_example_1"
+	@echo "... program1"
 	@echo "... Buf.o"
 	@echo "... Buf.i"
 	@echo "... Buf.s"

@@ -24,6 +24,7 @@ int main() {
 	// Запуск первого потока
 	thread t1([&](){ 
 		for(;;){
+		
 		clsString.InputS(str);
 		if(clsString.CheckS(str) != 0){
 			cout << "строка содержит символы или больше 64 символов" << endl;
@@ -38,6 +39,7 @@ int main() {
 	// Запуск воторго потока
 	thread t2([&](){ 
 		for(;;){
+			cout << "Ожидание ввода строки" << endl;
 		unique_lock<mutex> ulm (mtx);
 		cv.wait(ulm);			
  		str2 = buf.GetB(); 
@@ -48,6 +50,7 @@ int main() {
 		clsString.OutputS(str2);
 		sum = clsString.SumS(str2);
 		sprintf(msg, "%d", sum);
+		cout << "Запуск клиента. Передача суммы численных элементов." << endl;
 		client.StartClient(msg);
 		}
 	});

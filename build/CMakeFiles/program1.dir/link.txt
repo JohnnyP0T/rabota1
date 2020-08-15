@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++1y -Wall -pthread -rdynamic CMakeFiles/program1.dir/Buf.cpp.o CMakeFiles/program1.dir/Client.cpp.o CMakeFiles/program1.dir/StrCls.cpp.o CMakeFiles/program1.dir/prog1.cpp.o -o program1 
